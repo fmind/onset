@@ -16,7 +16,7 @@ def requires(requirements="requirements.txt"):
 
 info = dict(
     name="onset",
-    version="1.0.10",
+    version="1.0.11",
     license="EUPL-1.2",
     author="Médéric Hurier",
     author_email="dev@fmind.me",
