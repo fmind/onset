@@ -38,7 +38,11 @@ def main(args=None):
     steps = opts.steps
 
     if (len(steps) % 2) != 1:
-        sys.exit("Error: the number of steps should be odd. Got: {}".format(len(steps)))
+        sys.exit(
+            "Error: the number of steps should be odd. Got: {}".format(
+                len(steps)
+            )
+        )
 
     state = from_file(steps.pop(0))
 

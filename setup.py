@@ -16,7 +16,7 @@ def requires(requirements="requirements.txt"):
 
 info = dict(
     name="onset",
-    version="1.0.11",
+    version="1.0.12",
     license="AGPL-3.0",
     author="Médéric Hurier",
     author_email="dev@fmind.me",
@@ -34,7 +34,8 @@ info = dict(
         "Programming Language :: Python :: 3",
     ],
     extras_require={
-        os.path.dirname(f): requires(f) for f in glob.glob("*/requirements.txt")
+        os.path.dirname(f): requires(f)
+        for f in glob.glob("*/requirements.txt")
     },
     python_requires=">=3",
     install_requires=requires(),

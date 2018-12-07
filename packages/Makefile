@@ -1,11 +1,11 @@
-.PHONY: package upload
-
 init-packages: .venv
 	.venv/bin/pip install '.[packages]'
 
 clean-packages:
 	rm -rf build/lib/
 	rm -rf dist/*.whl
+
+check-packages: ;
 
 commit-packages: package;
 
