@@ -5,8 +5,6 @@ clean-packages:
 	rm -rf build/lib/
 	rm -rf dist/*.whl
 
-check-packages: ;
-
 commit-packages: package;
 
 package: .venv clean-packages

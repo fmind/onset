@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+OnSet	tests/test_onset.py	/^class OnSet(RuleBasedStateMachine):$/;"	c
+TestOnSet	tests/test_onset.py	/^TestOnSet = OnSet.TestCase$/;"	v
+author	setup.py	/^    author="Médéric Hurier",$/;"	v
+author_email	setup.py	/^    author_email="dev@fmind.me",$/;"	v
+c	ipython.py	/^c = get_config()$/;"	v
+c	shells/ipython.py	/^c = get_config()$/;"	v
+classifiers	setup.py	/^    classifiers=[$/;"	v
+description	setup.py	/^    description="Run set operations on files.",$/;"	v
+difference	onset/__init__.py	/^def difference(s: set, t: set) -> None:$/;"	f
+difference	tests/test_onset.py	/^    def difference(self, t):$/;"	m	class:OnSet
+disjunction	onset/__init__.py	/^def disjunction(s: set, t: set) -> None:$/;"	f
+disjunction	tests/test_onset.py	/^    def disjunction(self, t):$/;"	m	class:OnSet
+extras_require	setup.py	/^    extras_require={$/;"	v
+from_file	scripts/console.py	/^def from_file(path: str) -> set:$/;"	f
+from_oper	scripts/console.py	/^def from_oper(oper: str) -> Callable[[set, set], None]:$/;"	f
+info	setup.py	/^info = dict($/;"	v
+install_requires	setup.py	/^    install_requires=requires(),$/;"	v
+intersection	onset/__init__.py	/^def intersection(s: set, t: set) -> None:$/;"	f
+intersection	tests/test_onset.py	/^    def intersection(self, t):$/;"	m	class:OnSet
+intset	tests/test_onset.py	/^intset = strategies.sets(strategies.integers())$/;"	v
+is_set	tests/test_onset.py	/^    def is_set(self):$/;"	m	class:OnSet
+keywords	setup.py	/^    keywords="set file utility operation",$/;"	v
+license	setup.py	/^    license="AGPL-3.0",$/;"	v
+long_description	setup.py	/^    long_description=open("README.md", "r").read(),$/;"	v
+long_description_content_type	setup.py	/^    long_description_content_type="text\/markdown",$/;"	v
+main	scripts/console.py	/^def main(args=None):$/;"	f
+name	setup.py	/^    name="onset",$/;"	v
+package_dir	setup.py	/^    package_dir={"onset.scripts": "scripts"},$/;"	v
+packages	setup.py	/^    packages=["onset", "onset.scripts"],$/;"	v
+parser	scripts/console.py	/^parser = argparse.ArgumentParser(description=__doc__)$/;"	v
+requires	setup.py	/^def requires(requirements="requirements.txt"):$/;"	f
+root	setup.py	/^root = os.path.abspath(os.path.dirname(__file__))$/;"	v
+s	tests/test_onset.py	/^    s = intset.example()$/;"	v	class:OnSet
+test_difference_not_commutative	tests/test_onset.py	/^def test_difference_not_commutative(s, t):$/;"	f
+test_difference_on_empty	tests/test_onset.py	/^def test_difference_on_empty(s):$/;"	f
+test_difference_with_empty	tests/test_onset.py	/^def test_difference_with_empty(s):$/;"	f
+test_difference_with_self	tests/test_onset.py	/^def test_difference_with_self(s):$/;"	f
+test_difference_with_subset	tests/test_onset.py	/^def test_difference_with_subset(s, t):$/;"	f
+test_disjunction_is_associative	tests/test_onset.py	/^def test_disjunction_is_associative(s, t, r):$/;"	f
+test_disjunction_is_commutative	tests/test_onset.py	/^def test_disjunction_is_commutative(s, t):$/;"	f
+test_disjunction_with_empty	tests/test_onset.py	/^def test_disjunction_with_empty(s):$/;"	f
+test_disjunction_with_self	tests/test_onset.py	/^def test_disjunction_with_self(s):$/;"	f
+test_disjunction_with_subset	tests/test_onset.py	/^def test_disjunction_with_subset(s, t):$/;"	f
+test_intersection_is_associative	tests/test_onset.py	/^def test_intersection_is_associative(s, t, r):$/;"	f
+test_intersection_is_commutative	tests/test_onset.py	/^def test_intersection_is_commutative(s, t):$/;"	f
+test_intersection_is_subset	tests/test_onset.py	/^def test_intersection_is_subset(s, t):$/;"	f
+test_intersection_with_empty	tests/test_onset.py	/^def test_intersection_with_empty(s):$/;"	f
+test_intersection_with_self	tests/test_onset.py	/^def test_intersection_with_self(s):$/;"	f
+test_intersection_with_subset	tests/test_onset.py	/^def test_intersection_with_subset(s, t):$/;"	f
+test_union_is_associative	tests/test_onset.py	/^def test_union_is_associative(s, t, r):$/;"	f
+test_union_is_commutative	tests/test_onset.py	/^def test_union_is_commutative(s, t):$/;"	f
+test_union_is_superset	tests/test_onset.py	/^def test_union_is_superset(s, t):$/;"	f
+test_union_with_empty	tests/test_onset.py	/^def test_union_with_empty(s):$/;"	f
+test_union_with_self	tests/test_onset.py	/^def test_union_with_self(s):$/;"	f
+test_union_with_subset	tests/test_onset.py	/^def test_union_with_subset(s, t):$/;"	f
+union	onset/__init__.py	/^def union(s: set, t: set) -> None:$/;"	f
+union	tests/test_onset.py	/^    def union(self, t):$/;"	m	class:OnSet
+url	setup.py	/^    url="https:\/\/git.fmind.me\/fmind\/onset",$/;"	v
+version	setup.py	/^    version="1.0.12",$/;"	v

@@ -5,9 +5,6 @@ init-types: .venv
 clean-types:
 	find . -name '.mypy_cache' -exec rm -fr {} +
 
-check-types: .venv
-	.venv/bin/mypy . | grep ".py" || true
-
 commit-types: type;
 
 type: .venv

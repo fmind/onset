@@ -8,9 +8,8 @@ clean-covers:
 	rm -rf "covers/htmlcov"
 	find . -name '.coverage' -exec rm -fr {} +
 
-check-covers: ;
-
-commit-covers: htmlcov;
+commit-covers: htmlcov
+	git add --all 'covers/htmlcov/'
 
 cover: .venv
 	.venv/bin/coverage run --source ${NAME} -m pytest -q

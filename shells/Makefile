@@ -4,8 +4,6 @@ init-shells: .venv
 
 clean-shells: ;
 
-check-shells: ;
-
 commit-shells: ;
 
 shell: .venv

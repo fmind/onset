@@ -6,9 +6,6 @@ clean-tests:
 	find . -name '.hypothesis' -exec rm -fr {} +
 	find . -name '.pytest_cache' -exec rm -fr {} +
 
-check-tests: .venv
-	.venv/bin/pytest --quiet --tb=line | grep ".py" || true
-
 commit-tests: test;
 
 test: .venv

@@ -1,12 +1,11 @@
 init-pytags:
 	ln -fs 'pytags/ctags' '.ctags'
 
-check-pytags: ;
-
 clean-pytags:
 	rm -f tags
 
-commit-pytags: tag;
+commit-pytags: tag
+	git add tags
 
 tag:
 	ctags .

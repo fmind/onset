@@ -4,9 +4,8 @@ init-formats: .venv
 
 clean-formats: ;
 
-check-formats: ;
-
-commit-formats: format;
+commit-formats: format
+	git add --all **/*.py
 
 format: .venv
 	.venv/bin/black --config='black.ini' .

@@ -6,9 +6,6 @@ init-lints: .venv
 
 clean-lints: ;
 
-check-lints: .venv
-	.venv/bin/pylint --errors-only ${NAME} | grep ".py" || true
-
 commit-lints: lint;
 
 lint: .venv
