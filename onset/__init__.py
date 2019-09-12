@@ -1,4 +1,4 @@
-"""Set operations."""
+"""Set operations available to the module."""
 
 
 def union(s: set, t: set) -> None:

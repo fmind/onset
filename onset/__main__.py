@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Run set operations on files."""
 
 import argparse
@@ -13,18 +14,22 @@ parser.add_argument("steps", nargs="+", help="Syntax: file (oper file)+")
 
 def from_oper(oper: str) -> Callable[[set, set], None]:
     """Convert a string to a set operator."""
+    func = None
     oper = oper.lower()
 
     if oper in {"u", "union"}:
-        return onset.union
+        func = onset.union
     elif oper in {"d", "diff", "difference"}:
-        return onset.difference
+        func = onset.difference
     elif oper in {"j", "disj", "disjunction"}:
-        return onset.disjunction
+        func = onset.disjunction
     elif oper in {"i", "inter", "intersection"}:
-        return onset.intersection
-    else:
+        func = onset.intersection
+
+    if func is None:
         raise ValueError("Unknown set operation: {}".format(oper))
+
+    return func
 
 
 def from_file(path: str) -> set:
@@ -34,15 +39,12 @@ def from_file(path: str) -> set:
 
 
 def main(args=None):
+    """Execute the main script."""
     opts = parser.parse_args(args)
     steps = opts.steps
 
     if (len(steps) % 2) != 1:
-        sys.exit(
-            "Error: the number of steps should be odd. Got: {}".format(
-                len(steps)
-            )
-        )
+        sys.exit("Error: the number of steps should be odd. Got: {}".format(len(steps)))
 
     state = from_file(steps.pop(0))
 

@@ -1,1 +1,4 @@
-lints/pylint.ini
+[MESSAGES CONTROL]
+disable = invalid-name,
+          bad-continuation,
+          wrong-import-order
